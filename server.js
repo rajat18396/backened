@@ -20,6 +20,10 @@ app.use(express.json());
 app.use('/api',blogRoutes);
 app.use('/api',authRoutes);
 
+app.get("/",(req,res)=>{
+    res.send("Welcome to deploy")
+})
+
 
 //database conncetion
 ConnectDB();
